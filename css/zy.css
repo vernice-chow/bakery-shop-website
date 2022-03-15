@@ -1,0 +1,91 @@
+.hearing{
+    margin: auto;
+    text-align: center;
+    width: 800px;
+    height: 150px;
+    background:red;
+    animation: mymove 10s infinite;
+  }
+  
+  @keyframes mymove {
+    from {background-color:rgb(105, 15, 71);}
+    to {background-color: brown;}
+  }
+  
+  @keyframes flyin{
+      to{
+          filter:blur(0);
+          transform: scale(1);
+          opacity:1;
+      }
+  }
+  
+  .banner{
+      animation: flyin 3s ease forwards;
+      opacity:0;
+      transform: scale(2);
+      filter: blur(4px);
+  }
+
+.getintouch{
+	margin: 0;
+	text-align: left;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+.getintouch span{
+	color: rgb(223, 12, 12);
+	white-space: nowrap;
+	font-size: 175%;
+	font-weight: normal;
+}
+
+.getintouch-1 span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	color: red;
+	-webkit-transform-origin: 10% 75%;
+	transform-origin: 10% 75%;
+	-webkit-animation: dropdown 5s linear infinite 0s;
+	-ms-animation: dropdown 5s linear infinite 0s;
+	animation: dropdown 5s linear infinite 0s;
+}
+
+@-webkit-keyframes dropdown {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    17% { opacity: 1; -webkit-transform: rotate(0deg); }
+	19% { opacity: 1; -webkit-transform: rotate(98deg); }
+	21% { opacity: 1; -webkit-transform: rotate(86deg); }
+	23% { opacity: 1; -webkit-transform: translateY(85px) rotate(83deg); }
+	25% { opacity: 0; -webkit-transform: translateY(170px) rotate(80deg); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes dropdown {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    17% { opacity: 1; -ms-transform: rotate(0deg); }
+	19% { opacity: 1; -ms-transform: rotate(98deg); }
+	21% { opacity: 1; -ms-transform: rotate(86deg); }
+	23% { opacity: 1; -ms-transform: translateY(85px) rotate(83deg); }
+	25% { opacity: 0; -ms-transform: translateY(170px) rotate(80deg); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes dropdown {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    17% { opacity: 1; -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+	19% { opacity: 1; -webkit-transform: rotate(98deg); transform: rotate(98deg); }
+	21% { opacity: 1; -webkit-transform: rotate(86deg); transform: rotate(86deg); }
+	23% { opacity: 1; -webkit-transform: translateY(85px) rotate(83deg); transform: translateY(85px) rotate(83deg); }
+	25% { opacity: 0; -webkit-transform: translateY(170px) rotate(80deg); transform: translateY(170px) rotate(80deg); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+  

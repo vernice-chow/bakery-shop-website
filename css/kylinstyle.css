@@ -1,0 +1,127 @@
+body 
+{
+    background-color: #ededed;
+  }
+  
+  .rainbow-card:before {
+    height: 4px;
+    width: 100%;
+    content: "";
+    background: linear-gradient(270deg,#6f42c1 7.1%,#0366d6 28.4%,#28a745 42.6%,#ffd33d 56.8%,#f66a0a 71%,#d73a49 92.9%,#6f42c1);
+    background-size: 200% 100%;
+    animation: rainbow 4s linear infinite;
+    border-radius: .25rem .25em 0 0;
+  }
+  
+  .card-menu {
+    justify-content: flex-end;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+  }
+
+  html, body { height: 100%; }
+body {
+  background:radial-gradient(ellipse at center, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, #000 100%);
+  overflow: hidden;
+}
+
+
+.ocean { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #30cfd0;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -250px;
+  width: 6400px;
+  height: 194px;
+  animation: wave 8s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+.wave:nth-of-type(3) {
+  top: -225px;
+  animation: wave 6s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+.stars {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:25%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+
+#carttt {
+  position: absolute;
+  top: 50%; 
+  right: 50%;
+  transform: translate(50%,-50%);
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 5em;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+      1px 2px 1px #919191,
+      1px 3px 1px #919191,
+      1px 4px 1px #919191,
+      1px 5px 1px #919191,
+      1px 6px 1px #919191,
+      1px 7px 1px #919191,
+      1px 8px 1px #919191,
+      1px 9px 1px #919191,
+      1px 10px 1px #919191,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+}

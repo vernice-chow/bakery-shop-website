@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Uncle Ong Bakery</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="plugins/video-popup/modal-video.min.css">
+    <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" href="plugins/date-picker/datepicker.min.css">
+    <link rel="stylesheet" href="plugins/clock-picker/clockpicker.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.css">
+    <link rel="stylesheet" href="plugins/devices.min.css">
+    <link rel="stylesheet" href="css/sj.css">
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body class="indexx">
+    <div class="preloader">
+        <img src="images/preloader.gif" alt="preloader" class="img-fluid">
+    </div>
+
+    <!-- Header Start -->
+
+    <header class="navigation ">
+        <nav class="navbar navbar-expand-lg main-nav py-lg-3 position-absolute w-100" id="main-nav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/favicon.png" alt="" class="img-fluid">
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="fa fa-bars"></span>
+				</button>
+
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <div class="container">
+                                <label id="switch" class="switch">
+									<input type="checkbox" onchange="toggleTheme()" id="slider">
+									<span class="slider round"></span>
+								</label>
+                            </div>
+                        </li>
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                       
+                        <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Header Close -->
+
+    <!--  Banner start -->
+    <section class="slider-hero hero-slider  hero-style-1">
+        <div class="swiper-container swiper-container-horizontal ">
+            <div class="swiper-wrapper">
+                <!-- start slide-item -->
+                <div class="swiper-slide slide-item ">
+                    <div class="slide-inner slide-bg-image main-sider-inner" data-background="images/banner/slide-1.jpg">
+                        <!-- <div class="overlay"></div> -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <span data-swiper-parallax="300" class="text-primary font-extra font-md">Welcome to
+										bakery</span>
+                                    <h1 class="mt-3 mb-5 text-lg text-white" data-swiper-parallax="400">Fresh,Delicious bread to reach your optimum health and fitness</h1>
+                                    <a href="menu.html" class="btn btn-main mr-3" data-swiper-parallax="500">View
+                                        Menu</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slide-item -->
+
+                <!-- start slide-item -->
+                <div class="swiper-slide slide-item">
+                    <div class="slide-inner slide-bg-image main-sider-inner" data-background="images/banner/slide-2.jpg">
+                        <!-- <div class="overlay"></div> -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <span data-swiper-parallax="300" class="text-primary font-extra font-md">Welcome to
+										bakery</span>
+                                    <h1 class="mt-3 mb-5 text-lg text-white" data-swiper-parallax="400">Good food starts with good ingridients.Check out us!</h1>
+                                    <a href="menu.html" class="btn btn-main mr-3" data-swiper-parallax="500">View
+										Menu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slide-item -->
+
+            </div>
+            <!-- end swiper-wrapper -->
+            <!-- swipper controls -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!--  Banner End -->
+
+    <!--  Intro start -->
+    <section class="intro">
+        <div class="containerr">
+            <div class="intro-wrap bg-white w-100">
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="intro-item containerr" data-aos="fade-up">
+                            <i class="icofont-bread"></i>
+                            <h3 class="mt-3">Delicious Bread</h3>
+                            <p>Only the fresh materials used for all the bread.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <div class="intro-item containerr" data-aos="fade-up" data-aos-delay="300">
+                            <i class="icofont-tasks"></i>
+                            <h3 class="mt-3">Online Pre-Order</h3>
+                            <p>We provided pre-order for you. Skip the line!</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <div class="intro-item containerr" data-aos="fade-up" data-aos-delay="600">
+                            <i class="icofont-map-pins"></i>
+                            <h3 class="mt-3">Self Collection</h3>
+                            <p>Collect your order on our business hour. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Intro End -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5f56eb714704467e89ecf1b8/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+    <!-- About start -->
+    <section class="section about containerr">
+        <div class="container">
+            <div class="row  justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="text-primary font-extra font-md">About Uncle Ong Bakery</span>
+                    <h2 class="mt-3 mb-4">We are a Homestyle Bakery in the center of the city </h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 mb-5 mb-lg-0" data-aos="fade-up">
+                    <img src="images/indexpho/flour.jpg" alt="" class="img-fluid">
+                    <div class="mt-3">
+                        <h3>Quality and Freshness</h3>
+                        <p>Our bakery select premium natural and high quality ingredients to ensure the greater quality control of the finished items.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/indexpho/bun.jpg" alt="" class="img-fluid">
+                    <div class="mt-3">
+                        <h3>Sundry Tasty Food</h3>
+                        <p>We want to not only bring delicious food, but smiles to our customers' faces.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="600">
+                    <img src="images/indexpho/price.jpg" alt="" class="img-fluid">
+                    <div class="mt-3">
+                        <h3>Affordable price</h3>
+                        <p>High quality food, affordable price. You deserve to have it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About  End -->
+
+    <!-- CTA start -->
+    <section class="section cta containerr">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="font-extra text-md-2 text-white-70">Prepare The Best</span>
+                    <h2 class="mt-3 text-white mb-4">Come & Experience Our Fresh Beard</h2>
+                    <a href="#"><button class="example order3d">order now!</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA  End -->
+    <!-- DISHES start -->
+    <section class="section menu containerr">
+        <div class="container">
+            <div class="row  justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="text-primary font-extra font-md">Uncle Ong Bakery</span>
+                    <h2 class="mt-3 mb-4">We provide quality and fresh bread.We care about your health </h2>
+                </div>
+            </div>
+            <div class="col-12 text-center  mb-5">
+                <div class="btn-group btn-group-toggle " data-toggle="buttons">
+                    <label class="btn active ">
+						<input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+					</label>
+                    <label class="btn ">
+						<input type="radio" name="shuffle-filter" value="cake" />Cakes
+					</label>
+                    <label class="btn">
+						<input type="radio" name="shuffle-filter" value="bun" />Buns
+					</label>
+                    <label class="btn">
+						<input type="radio" name="shuffle-filter" value="cookie" />Cookies
+					</label>
+                </div>
+            </div>
+
+            <div class="row shuffle-wrapper food-gallery">
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;bun&quot;]">
+                    <div class="menu-item position-relative ">
+                        <div class="d-flex align-items-center">
+                            <img src="images/menu/menu-1.jpg" alt="red bean bun" class="img-fluid">
+                            <div>
+                                <h4>Sweet Red Bean Bun - <span>RM 3.50</span></h4>
+                                <p>Uncle Ong homemade tradisional red bean bun.</p>
+                                <div class="mb-4">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;bun&quot;]">
+                    <div class="menu-item position-relative">
+                        <div class="d-flex align-items-center">
+                            <img src="images/menu/menu-2.jpg" alt="sesame polo bun" class="img-fluid">
+                            <div>
+                                <h4>Tradisional Sesame Polo Bun - <span>RM 5.00</span></h4>
+                                <p>Baked with sesame toppings and fresh sweet & sour pineapple fillings!</p>
+                                <div class="mb-4">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cake&quot;]">
+                    <div class="menu-item position-relative">
+                        <div class="d-flex align-items-center">
+                            <img src="images/menu/menu-3.jpg" alt="signature cake" class="img-fluid">
+                            <div>
+                                <h4>Uncle Ong Signature Cake - <span>RM 10.00</span></h4>
+                                <p>Uncle Ong Signature Cake baked with high quality ingredients like flour, fresh farm eggs, milk and etc.</p>
+                                <div class="mb-4">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;bun&quot;]">
+                    <div class="menu-item position-relative ">
+                        <div class="d-flex  align-items-center">
+                            <img src="images/menu/menu-4.jpg" alt="" class="img-fluid">
+                            <div>
+                                <h4>Classical Donut - <span>RM 5.00</span></h4>
+                                <p>Uncle Ong Classical Ring Donut with chocolate.</p>
+                                <div class="mb-4">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center mt-5">
+                    <a href="menu.html" class="btn btn-black ">View full menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DISHES  End -->
+
+
+    <section class="section containerr">
+        <div class="text-center introvideo">
+            <span class="text-primary font-extra font-md">A Short Intro of Us</span>
+            <div class="video-item">
+                <img src="images/banner/cta-bg.jpg" alt="" class="img-fluid">
+                <a data-video-id="3ZXfm-SKqJA" class="videoplay"><i class="ti-control-play"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section containerr">
+        <div class="container">
+            <h2 class="mt-3 mb-4">We Are Here For You <i class="icofont-location-pin"></i>
+            </h2>
+            <span class="text-primary font-extra font-md">Today's Weather</span>
+            <p id="weathering"></p>
+
+
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="1000px" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=Pasar%20Awam%20Malim%20Nawar&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- end -->
+    <section>
+
+    </section>
+    <!--Footer start -->
+    <footer class="section footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-3 mb-5 mb-lg-0">
+                    <div class="widget">
+                        <h4 class="mb-3">About</h4>
+                        <p>Uncle Ong Bakery is a modern homestyle bakery that delivery happiness.</p>
+
+                        <ul class="list-inline footer-socials mt-4">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/themefisher"><i
+										class="ti-facebook mr-2"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/themefisher"><i
+										class="ti-twitter mr-2 "></i></a>
+                            </li>
+                            <li class="list-inline-item"><a href="https://github.com/themefisher/"><i
+										class="ti-github mr-2 "></i></a>
+                            </li>
+                            <li class="list-inline-item"><a href="https://dribbble.com/themefisher/"><i
+										class="ti-dribbble mr-2 "></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 ml-auto col-md-5 mb-5 mb-lg-0">
+                    <div class="widget">
+                        <h4 class="mb-3">Contact Info</h4>
+
+                        <ul class="list-unstyled mb-0 footer-contact">
+                            <li><i class="ti-mobile"></i>+605- 6915351</li>
+                            <li><i class="ti-email"></i>uncleongbakery@support.com</li>
+                            <li><i class="ti-map"></i>271, Jalan Perak 9, 31900 Kampar, Negeri Perak （Night Market)</li>
+                            <li><i class="ti-map"></i>31700 Malim Nawar, Perak （Morning Market)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
+                    <div class="widget">
+                        <h4 class="mb-3">Opening Hours</h4>
+
+                        <div class="info mb-4">
+                            <p class="mb-0">Monday - Saturday (Night Market)</p>
+                            <h5>05:30 PM - 11:00 PM</h5>
+                        </div>
+                        <div class="info">
+                            <p class="mb-0">Sunday - Friday (Morning Market)</p>
+                            <h5>06: 00 AM - 10:00 AM</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-6 text-center">
+                    <h4 class="text-white-50 mb-3">Get latest food recipe at your inbox</h4>
+                    <form action="#" class="footer-newsletter">
+                        <div class="form-group">
+                            <button class="button"><span class="ti-email"></span></button>
+                            <input type="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Footer  End -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="plugins/shuffle/shuffle.min.js"></script>
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="plugins/date-picker/datepicker.min.js"></script>
+    <script src="plugins/clock-picker/clockpicker.min.js"></script>
+    <script src="plugins/video-popup/jquery-modal-video.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="plugins/instafeed/instafeed.min.js"></script>
+    <script src="plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.js"></script>
+
+
+    <!-- Main Script -->
+    <script src="js/contact.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/darktheme.js"></script>
+
+
+
+</html>

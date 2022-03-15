@@ -1,0 +1,17 @@
+CACHE MANIFEST
+ 
+CACHE:
+https://assignmenttt.azurewebsites.net/cart.html
+https://assignmenttt.azurewebsites.net/checkout.html
+ 
+js/cart.js
+css/kylinstyle.css
+css/checkout.css
+ 
+images/favicon.png
+ 
+NETWORK:
+https://assignmenttt.azurewebsites.net/index.html
+ 
+FALLBACK:
+https://assignmenttt.azurewebsites.net/contact.html

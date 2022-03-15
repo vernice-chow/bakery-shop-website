@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Uncle Ong - Bakery Menu</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+    <link rel="stylesheet" href="plugins/aos/aos.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="plugins/video-popup/modal-video.min.css">
+    <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" href="plugins/date-picker/datepicker.min.css">
+    <link rel="stylesheet" href="plugins/clock-picker/clockpicker.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.css">
+    <link rel="stylesheet" href="plugins/devices.min.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <style>
+        .menu-item img {
+            min-width: 50%;
+        }
+        
+        .like {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="images/preloader.gif" alt="preloader" class="img-fluid">
+    </div>
+    <!-- Header Start -->
+
+    <header class="navigation ">
+        <nav class="navbar navbar-expand-lg main-nav py-lg-3 position-absolute w-100" id="main-nav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/favicon.png" alt="" class="img-fluid">
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span>
+			</button>
+
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                 
+
+                        <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+                       </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Header Close -->
+    <section class="section-header bg-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h1 class="text-capitalize mb-4 font-lg text-white">Bakery Menu</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section menu">
+        <div class="container">
+            <div class="row  justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <span class="text-primary font-extra font-md">Uncle Ong's Bakery</span>
+                    <h2 class="mt-3 mb-4">We provide quality baked goods.We care about your health </h2>
+
+                </div>
+            </div>
+
+            <div class="col-12 text-center  mb-5">
+                <div class="btn-group btn-group-toggle " data-toggle="buttons">
+                    <label class="btn active ">
+						<input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+					</label>
+                    <label class="btn ">
+						<input type="radio" name="shuffle-filter" value="cake" />Cakes
+					</label>
+                    <label class="btn">
+						<input type="radio" name="shuffle-filter" value="bun" />Buns
+					</label>
+                    <label class="btn">
+						<input type="radio" name="shuffle-filter" value="cookie" />Cookies
+					</label>
+                </div>
+            </div>
+
+            <div class="row shuffle-wrapper food-gallery">
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;bun&quot;]">
+                    <div class="menu-item position-relative ">
+                        <div class="d-flex align-items-center">
+                            <img src="images/menu/menu-1.jpg" alt="red bean bun" class="img-fluid">
+                            <div>
+                                <h4>Sweet Red Bean Bun - <span>RM 3.50</span></h4>
+                                <p>Uncle Ong homemade tradisional red bean bun.</p>
+                                <i value="01" class="like mb-4 far fa-heart" onclick="addWish(this)"></i>
+                                <input class="quantity" id="01" type="text" value="1" name="quantity">
+                                <div class="mb-4">
+                                    <button type="button" class="btn btn-light mt-2" onclick="addCart('01')"><i
+											class="ti-shopping-cart mr-2 text-primary"></i>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;bun&quot;]">
+                    <div class="menu-item position-relative">
+                        <div class="d-flex align-items-center">
+                            <img src="images/menu/menu-2.jpg" alt="sesame polo bun" class="img-fluid">
+                            <div>
+                                <h4>Tradisional Sesame Polo Bun - <span>RM 5.00</span></h4>
+                                <p>Baked with sesame toppings and fresh sweet & sour pineapple fillings!</p>
+                                <i value="02" class="like mb-4 far fa-heart" onclick="addWish(this)"></i>
+                                <input class="quantity" id="02" type="text" value="1" name="quantity">
+                                <div class="mb-4">
+                                    <button type="button" class="btn btn-light mt-2" onclick="addCart('02')"><i
+											class="ti-shopping-cart mr-2 text-primary"></i>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cake&quot;]">
+                    <div class="menu-item position-relative">
+                        <div class="d-flex align-items-center">
+                            <img src="images/menu/menu-3.jpg" alt="signature cake" class="img-fluid">
+                            <div>
+                                <h4>Uncle Ong Signature Cake - <span>RM 10.00</span></h4>
+                                <p>Uncle Ong Signature Cake baked with high quality ingredients like flour, fresh farm eggs, milk and etc.</p>
+                                <i value="03" class="like mb-4 far fa-heart" onclick="addWish(this)"></i>
+                                <input class="quantity" id="03" type="text" value="1" name="quantity">
+                                <div class="mb-4">
+                                    <button type="button" class="btn btn-light mt-2" onclick="addCart('03')"><i
+											class="ti-shopping-cart mr-2 text-primary"></i>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;bun&quot;]">
+                    <div class="menu-item position-relative ">
+                        <div class="d-flex  align-items-center">
+                            <img src="images/menu/menu-4.jpg" alt="" class="img-fluid">
+                            <div>
+                                <h4>Classical Donut - <span>RM 5.00</span></h4>
+                                <p>Uncle Ong Classical Ring Donut with chocolate.</p>
+                                <i value="04" class="like mb-4 far fa-heart" onclick="addWish(this)"></i>
+                                <input class="quantity" id="04" type="text" value="1" name="quantity">
+                                <div class="mb-4">
+                                    <button type="button" class="btn btn-light mt-2" onclick="addCart('04')"><i
+											class="ti-shopping-cart mr-2 text-primary"></i>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cookie&quot;]">
+                    <div class="menu-item position-relative ">
+                        <div class="d-flex  align-items-center">
+                            <img src="images/menu/menu-5.jpg" alt="" class="img-fluid">
+                            <div>
+                                <h4>Almond Chocolate Cookies - <span>RM 6.50</span></h4>
+                                <p>Uncle Ong healthy chocolate almond cookies! 300g per pack</p>
+                                <i value="05" class="like mb-4 far fa-heart" onclick="addWish(this)"></i>
+                                <input class="quantity" id="05" type="text" value="1" name="quantity">
+                                <div class="mb-4">
+                                    <button type="button" class="btn btn-light mt-2" onclick="addCart('05')"><i
+											class="ti-shopping-cart mr-2 text-primary"></i>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cookie&quot;]">
+                    <div class="menu-item position-relative ">
+                        <div class="d-flex  align-items-center">
+                            <img src="images/menu/menu-6.jpg" alt="" class="img-fluid">
+                            <div>
+                                <h4>Peanut Butter Blossom Cookies - <span>RM 7.50</span></h4>
+                                <p>Wonderful peanut butter blossom cookies with chocolate icing! 300g per pack</p>
+                                <i value="06" class="like mb-4 far fa-heart" onclick="addWish(this)"></i>
+                                <input class="quantity" id="06" type="text" value="1" name="quantity">
+                                <div class="mb-4">
+                                    <button type="button" class="btn btn-light mt-2" onclick="addCart('06')"><i
+											class="ti-shopping-cart mr-2 text-primary"></i>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;cake&quot;]">
+                    <div class="menu-item position-relative ">
+                        <div class="d-flex  align-items-center">
+                            <img src="images/menu/menu-7.jpg" alt="" class="img-fluid">
+                            <div>
+                                <h4>Blueberry Cream Cake - <span>RM 20.00</span></h4>
+                                <p>Uncle Ong blueberry cake with creamy and fruity taste. Your best choice for Birthday cake!
+                                </p>
+                                <i value="07" class="like mb-4 far fa-heart" onclick="addWish(this)"></i>
+                                <input class="quantity" id="07" type="text" value="1" name="quantity">
+                                <div class="mb-4">
+                                    <button type="button" class="btn btn-light mt-2" onclick="addCart('07')"><i
+											class="ti-shopping-cart mr-2 text-primary"></i>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-4 shuffle-item" data-groups="[&quot;bun&quot;]">
+                    <div class="menu-item position-relative ">
+                        <div class="d-flex  align-items-center">
+                            <img src="images/menu/menu-8.jpg" alt="" class="img-fluid">
+                            <div>
+                                <h4>Coffee Bun (Roti Kopi) - <span>RM 2.00</span></h4>
+                                <p>Ultra pillowy soft Coffee Bun with heavenly buttery goodness!</p>
+                                <i value="08" class="like mb-4 far fa-heart" onclick="addWish(this)"></i>
+                                <input class="quantity" id="08" type="text" value="1" name="quantity">
+                                <div class="mb-4">
+                                    <button type="button" class="btn btn-light mt-2" onclick="addCart('08')"><i
+											class="ti-shopping-cart mr-2 text-primary"></i>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center mt-5">
+                    <a href="cart.html" class="btn btn-black ">CheckOut</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="section footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-3 mb-5 mb-lg-0">
+                    <div class="widget">
+                        <h4 class="mb-3">About</h4>
+                        <p>Uncle Ong Bakery is a modern homestyle bakery that delivery happiness.</p>
+
+                        <ul class="list-inline footer-socials mt-4">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/"><i
+										class="ti-facebook mr-2"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/"><i
+										class="ti-twitter mr-2 "></i></a>
+                            </li>
+                            <li class="list-inline-item"><a href="https://github.com/"><i
+										class="ti-github mr-2 "></i></a>
+                            </li>
+                            <li class="list-inline-item"><a href="https://dribbble.com/"><i
+										class="ti-dribbble mr-2 "></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 ml-auto col-md-5 mb-5 mb-lg-0">
+                    <div class="widget">
+                        <h4 class="mb-3">Contact Info</h4>
+
+                        <ul class="list-unstyled mb-0 footer-contact">
+                            <li><i class="ti-mobile"></i>+605- 6915351</li>
+                            <li><i class="ti-email"></i>uncleongbakery@support.com</li>
+                            <li><a href="https://goo.gl/maps/6iqsTGKbpFEwCzaW8" style="color:grey"><i
+										class="ti-map"></i>271, Jalan Perak 9, 31900 Kampar, Negeri Perak （Night
+									Market)</a></li>
+                            <li><a href="https://goo.gl/maps/Eeb4r8SMVNSGTfSS9" style="color:grey"><i
+										class="ti-map"></i>31700 Malim Nawar, Perak （Morning Market)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
+                    <div class="widget">
+                        <h4 class="mb-3">Opening Hours</h4>
+
+                        <div class="info mb-4">
+                            <p class="mb-0">Monday - Saturday (Night Market)</p>
+                            <h5>05:30 PM - 11:00 PM</h5>
+                        </div>
+                        <div class="info">
+                            <p class="mb-0">Sunday - Friday (Morning Market)</p>
+                            <h5>06: 00 AM - 10:00 AM</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-6 text-center">
+                    <h4 class="text-white-50 mb-3">Get the new product at your inbox</h4>
+                    <form action="#" class="footer-newsletter">
+                        <div class="form-group">
+                            <button class="button"><span class="ti-email"></span></button>
+                            <input type="email" class="form-control" placeholder="xxxx@gmail.com" id="mail">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="plugins/shuffle/shuffle.min.js"></script>
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="plugins/date-picker/datepicker.min.js"></script>
+    <script src="plugins/clock-picker/clockpicker.min.js"></script>
+    <script src="plugins/video-popup/jquery-modal-video.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="plugins/instafeed/instafeed.min.js"></script>
+    <script src="plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.js"></script>
+    <!-- Main Script -->
+    <script src="js/contact.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/item.js"></script>
+
+    <!--Start of Tawk.to Script Online embeded Chat-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5f562132f0e7167d000e115e/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
